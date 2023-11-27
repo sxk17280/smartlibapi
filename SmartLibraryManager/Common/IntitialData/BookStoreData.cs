@@ -35,12 +35,8 @@ namespace SmartLibraryManager.Common.IntitialData
         {
             return new List<User>()
             {
-                new User(){FirstName="Sai",LastName="Teja",Email="sxk17280@ucmo.edu",Password="123456",Phone="1234567890",Address="123, Main Street, New York",City="New York",UserId=Util.GetRandomNumber(),Id=ObjectId.GenerateNewId().ToString(),IsAdmin=true,Fine=0 },
-                new User(){FirstName="SaiTejaGoud",LastName="Kasala",Email="saitejagoud123@gmail.com",Password="123456",Phone="1234567890",Address="123, Main Street, New York",City="New York",UserId=Util.GetRandomNumber(),Id=ObjectId.GenerateNewId().ToString(),IsAdmin=false,Fine=0 },
-                new User(){FirstName="SaiTeja",LastName="Kasala",Email="saitejagoudkasala@gmail.com",Password="123456",Phone="1234567890",Address="123, Main Street, New York",City="New York",UserId=Util.GetRandomNumber(),Id=ObjectId.GenerateNewId().ToString(),IsAdmin=true, Fine = 0},
-                new User(){FirstName="Sri",LastName="Hari",Email="sriharigoud087@gmail.com",Password="123456",Phone="1234567890",Address="123, Main Street, New York",City="New York",UserId=Util.GetRandomNumber(),Id=ObjectId.GenerateNewId().ToString(),IsAdmin=false, Fine = 0},
-                new User(){FirstName="kiran",LastName="Siva",Email="saitejagoud868@gmail.com",Password="123456",Phone="1234567890",Address="123, Main Street, New York",City="New York",UserId=Util.GetRandomNumber(),Id=ObjectId.GenerateNewId().ToString(),IsAdmin=false, Fine = 0},
-                new User(){FirstName="Ganesh",LastName="Ambati",Email="saitejak539868@gmail.com",Password="123456",Phone="1234567890",Address="123, Main Street, New York",City="New York",UserId=Util.GetRandomNumber(),Id=ObjectId.GenerateNewId().ToString(),IsAdmin=false, Fine = 0},
+                new User(){FirstName="Shiva",LastName="Ch",Email="sxc20730@ucmo.edu",Password="123456",Phone="1234567890",Address="123, Main Street, New York",City="New York",UserId=Util.GetRandomNumber(),Id=ObjectId.GenerateNewId().ToString(),IsAdmin=true,Fine=0 },
+                new User(){FirstName="Sai",LastName="Ch",Email="pintuchakilam666@gmail.com",Password="123456",Phone="1234567890",Address="123, Main Street, New York",City="New York",UserId=Util.GetRandomNumber(),Id=ObjectId.GenerateNewId().ToString(),IsAdmin=false,Fine=0 },
             };
         }
 
