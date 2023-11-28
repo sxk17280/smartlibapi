@@ -1,10 +1,12 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using SmartLibraryManager.Common.Models;
 using SmartLibraryManager.Migration;
 using SmartLibraryManager.Models;
 using SmartLibraryManager.Services;
+using SmartLibraryManager.SLAModels;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +17,9 @@ builder.Services.Configure<DatabaseSettings>(
 
 builder.Services.Configure<JwtConfiguration>(
     builder.Configuration.GetSection("JwtConfiguration"));
+
+builder.Services.AddDbContext<SLAContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var configuration = builder.Configuration;
 AppSettings appSettings = new AppSettings();
